@@ -1,0 +1,8 @@
+workflows:
+  syncSpecToCollection:
+    - spec: ../openapi/workday-workforce-provisioning-api.yaml
+      collection: ../postman/collections/[Baseline] workday-workforce-provisioning-api
+    - spec: ../openapi/workday-workforce-provisioning-api.yaml
+      collection: ../postman/collections/[Smoke] workday-workforce-provisioning-api
+    - spec: ../openapi/workday-workforce-provisioning-api.yaml
+      collection: ../postman/collections/[Contract] workday-workforce-provisioning-api

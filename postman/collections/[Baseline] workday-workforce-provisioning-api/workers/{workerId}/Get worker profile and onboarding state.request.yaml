@@ -1,0 +1,30 @@
+type: http
+name: Get worker profile and onboarding state
+url: '{{baseUrl}}/workers/:workerId'
+method: GET
+headers:
+  - key: Accept
+    value: application/json
+pathVariables:
+  - key: workerId
+    value: 0aa5f7b3-1dd6-04a1-7914-918f1ebca9c4
+examples:
+  - response:
+      statusCode: 200
+      statusText: OK
+      body:
+        type: json
+        content: |-
+          {
+            "workerId": "b6cb1b04-6ab5-404a-5348-1a4ae1728cc1",
+            "employeeNumber": "string",
+            "status": "leave",
+            "department": "string",
+            "location": "string",
+            "startDate": "1981-07-16",
+            "onboardingState": "provisioned"
+          }
+      headers:
+        - key: Content-Type
+          value: application/json
+    name: Worker details

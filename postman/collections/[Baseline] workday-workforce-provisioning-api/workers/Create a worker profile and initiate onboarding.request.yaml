@@ -1,0 +1,42 @@
+type: http
+name: Create a worker profile and initiate onboarding
+url: '{{baseUrl}}/workers'
+method: POST
+headers:
+  - key: Content-Type
+    value: application/json
+  - key: Accept
+    value: application/json
+body:
+  type: json
+  content: |-
+    {
+      "firstName": "string",
+      "lastName": "string",
+      "workEmail": "PWCB1JOGQBeaK6y@ZiqghZHBNKUOpBBCzfqMScykDebif.jiv",
+      "department": "string",
+      "startDate": "1973-03-07",
+      "managerId": "string",
+      "location": "string",
+      "employmentType": "contractor"
+    }
+examples:
+  - response:
+      statusCode: 201
+      statusText: Created
+      body:
+        type: json
+        content: |-
+          {
+            "workerId": "b6cb1b04-6ab5-404a-5348-1a4ae1728cc1",
+            "employeeNumber": "string",
+            "status": "leave",
+            "department": "string",
+            "location": "string",
+            "startDate": "1981-07-16",
+            "onboardingState": "provisioned"
+          }
+      headers:
+        - key: Content-Type
+          value: application/json
+    name: Worker created

@@ -1,0 +1,38 @@
+type: http
+name: Request downstream app access for a worker
+url: '{{baseUrl}}/workers/:workerId/access-requests'
+method: POST
+headers:
+  - key: Content-Type
+    value: application/json
+  - key: Accept
+    value: application/json
+pathVariables:
+  - key: workerId
+    value: 0aa5f7b3-1dd6-04a1-7914-918f1ebca9c4
+body:
+  type: json
+  content: |-
+    {
+      "systemName": "salesforce",
+      "roleName": "string",
+      "justification": "string",
+      "requestedBy": "string"
+    }
+examples:
+  - response:
+      statusCode: 201
+      statusText: Created
+      body:
+        type: json
+        content: |-
+          {
+            "ticketId": "319a8e25-095a-a074-eead-2c09f5989645",
+            "workerId": "90d6820b-37b1-dfbf-e6f6-f5394f18c06d",
+            "systemName": "string",
+            "status": "awaiting_approval"
+          }
+      headers:
+        - key: Content-Type
+          value: application/json
+    name: Access request created

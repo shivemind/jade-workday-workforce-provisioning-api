@@ -1,0 +1,20 @@
+workspace:
+  id: 48f13bfa-7779-4997-8fb3-79724a14f32f
+localResources:
+  collections:
+    - ../postman/collections/[Baseline] workday-workforce-provisioning-api
+    - ../postman/collections/[Smoke] workday-workforce-provisioning-api
+    - ../postman/collections/[Contract] workday-workforce-provisioning-api
+  environments:
+    - ../postman/environments/prod.postman_environment.json
+    - ../postman/environments/stage.postman_environment.json
+  specs:
+    - ../openapi/workday-workforce-provisioning-api.yaml
+cloudResources:
+  collections:
+    ../postman/collections/[Baseline] workday-workforce-provisioning-api: 52400725-6a163c47-30da-4f45-9ccf-5c5aeb81bfa3
+    ../postman/collections/[Smoke] workday-workforce-provisioning-api: 52400725-4e3cc691-a776-4b13-a7b1-89b3d8f522b7
+    ../postman/collections/[Contract] workday-workforce-provisioning-api: 52400725-a5eeb406-1dfd-48e8-ae10-46767dafcf17
+  environments:
+    ../postman/environments/prod.postman_environment.json: 52400725-2a35ab82-c85e-4f53-a9c7-9c67c2928626
+    ../postman/environments/stage.postman_environment.json: 52400725-d9f309d4-ce1d-4bae-be50-b8cc4dd0f42f

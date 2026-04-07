@@ -1,0 +1,56 @@
+type: http
+name: Request downstream app access for a worker
+url: '{{baseUrl}}/workers/:workerId/access-requests'
+method: POST
+headers:
+  - key: Content-Type
+    value: application/json
+  - key: Accept
+    value: application/json
+pathVariables:
+  - key: workerId
+    value: 52b674b0-09cf-65ea-92a3-b635c17637a1
+body:
+  type: json
+  content: |-
+    {
+      "systemName": "salesforce",
+      "roleName": "string",
+      "justification": "string",
+      "requestedBy": "string"
+    }
+scripts:
+  - type: afterResponse
+    code:
+      - // [Smoke] Auto-generated test assertions
+      - pm.test('Status code is successful (2xx)', function () {
+      - '    pm.response.to.be.success;'
+      - '});'
+      - pm.test('Response time is acceptable', function () {
+      - '    var threshold = parseInt(pm.environment.get(''RESPONSE_TIME_THRESHOLD'') || ''2000'', 10);'
+      - '    pm.expect(pm.response.responseTime).to.be.below(threshold);'
+      - '});'
+      - pm.test('Response body is not empty', function () {
+      - '    if (pm.response.code !== 204) {'
+      - '        var body = pm.response.text();'
+      - '        pm.expect(body.length).to.be.above(0);'
+      - '    }'
+      - '});'
+    language: text/javascript
+examples:
+  - response:
+      statusCode: 201
+      statusText: Created
+      body:
+        type: json
+        content: |-
+          {
+            "ticketId": "89bf0a60-5898-b67f-c01f-29b1674693ab",
+            "workerId": "77250e80-521b-7441-6c7b-10d0e63a98df",
+            "systemName": "string",
+            "status": "provisioning"
+          }
+      headers:
+        - key: Content-Type
+          value: application/json
+    name: Access request created

@@ -1,0 +1,36 @@
+type: http
+name: Get identity and application provisioning status
+url: '{{baseUrl}}/workers/:workerId/provisioning-status'
+method: GET
+headers:
+  - key: Accept
+    value: application/json
+pathVariables:
+  - key: workerId
+    value: 0aa5f7b3-1dd6-04a1-7914-918f1ebca9c4
+examples:
+  - response:
+      statusCode: 200
+      statusText: OK
+      body:
+        type: json
+        content: |-
+          {
+            "workerId": "67308b6e-a990-64b4-46c3-5e14fed7e878",
+            "identityStatus": "not_started",
+            "laptopStatus": "in_progress",
+            "applicationAccess": [
+              {
+                "systemName": "string",
+                "status": "completed"
+              },
+              {
+                "systemName": "string",
+                "status": "failed"
+              }
+            ]
+          }
+      headers:
+        - key: Content-Type
+          value: application/json
+    name: Provisioning state
