@@ -7,7 +7,7 @@ headers:
     value: application/json
 pathVariables:
   - key: workerId
-    value: de72e00d-081f-b058-cf8c-37516bf2a791
+    value: 08f33a57-d364-36e9-0ebb-3b4c7e7f92b3
 scripts:
   - type: afterResponse
     code:
@@ -34,12 +34,12 @@ examples:
         type: json
         content: |-
           {
-            "workerId": "5737cbe9-1edb-9a4f-06e5-f6a958199933",
+            "workerId": "94a79068-231c-f51b-d4fc-e97377d5e90f",
             "employeeNumber": "string",
-            "status": "terminated",
+            "status": "active",
             "department": "string",
             "location": "string",
-            "startDate": "1958-10-23",
+            "startDate": "1954-09-17",
             "onboardingState": "blocked"
           }
       headers:
