@@ -3,7 +3,7 @@ type: collection
 name: '[Smoke] workday-workforce-provisioning-api'
 description: |
   Sample API for worker onboarding and downstream provisioning across HR, identity, and application access workflows.
-id: 1d56f607-dc3d-490a-811f-b8fcf6ab8d00
+id: 4ea101c8-e4d9-47ed-99ca-4a12a04eaced
 variables:
   - key: baseUrl
     value: https://stage-api.example.com/workforce

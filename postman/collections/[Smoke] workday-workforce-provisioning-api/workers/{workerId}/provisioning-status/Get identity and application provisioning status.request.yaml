@@ -7,7 +7,7 @@ headers:
     value: application/json
 pathVariables:
   - key: workerId
-    value: 08f33a57-d364-36e9-0ebb-3b4c7e7f92b3
+    value: fedae2bc-bd91-0590-3aae-d1b192ba7234
 scripts:
   - type: afterResponse
     code:
@@ -34,17 +34,17 @@ examples:
         type: json
         content: |-
           {
-            "workerId": "11621aeb-1377-65bb-c5d4-be4ca11ff976",
-            "identityStatus": "completed",
-            "laptopStatus": "in_progress",
+            "workerId": "5c98ee03-4362-473a-5fcc-966c1a0b3c4b",
+            "identityStatus": "in_progress",
+            "laptopStatus": "completed",
             "applicationAccess": [
               {
                 "systemName": "string",
-                "status": "in_progress"
+                "status": "not_started"
               },
               {
                 "systemName": "string",
-                "status": "not_started"
+                "status": "completed"
               }
             ]
           }

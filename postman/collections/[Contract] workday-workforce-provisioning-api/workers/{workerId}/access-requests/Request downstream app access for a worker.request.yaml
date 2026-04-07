@@ -9,7 +9,7 @@ headers:
     value: application/json
 pathVariables:
   - key: workerId
-    value: fb266918-598e-5b21-28a4-4a86084ce89d
+    value: b9de59a8-618f-a7a5-1520-09d0d4091cfb
 body:
   type: json
   content: |-
@@ -88,10 +88,10 @@ examples:
         type: json
         content: |-
           {
-            "ticketId": "4e4a0606-e410-7050-dfd2-7db07cdf7a74",
-            "workerId": "91a269b3-3510-19d9-45dc-8d869bb4543e",
+            "ticketId": "c3224a59-67ea-a18c-0898-6650faf9c940",
+            "workerId": "8d9094d5-7f0f-a689-7d53-af8e8d605d3d",
             "systemName": "string",
-            "status": "failed"
+            "status": "awaiting_approval"
           }
       headers:
         - key: Content-Type

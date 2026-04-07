@@ -13,12 +13,12 @@ body:
     {
       "firstName": "string",
       "lastName": "string",
-      "workEmail": "IdEot59Bbp3b@LPsFYxpzayZjaRMuO.edl",
+      "workEmail": "YxqeZs@XDKPOfPjQiTTM.onsh",
       "department": "string",
-      "startDate": "1976-11-21",
+      "startDate": "1973-10-24",
       "managerId": "string",
       "location": "string",
-      "employmentType": "intern"
+      "employmentType": "employee"
     }
 scripts:
   - type: afterResponse
@@ -46,13 +46,13 @@ examples:
         type: json
         content: |-
           {
-            "workerId": "94a79068-231c-f51b-d4fc-e97377d5e90f",
+            "workerId": "782d3da3-1947-0c5d-9b4f-c5cb72c01f36",
             "employeeNumber": "string",
-            "status": "active",
+            "status": "leave",
             "department": "string",
             "location": "string",
-            "startDate": "1954-09-17",
-            "onboardingState": "blocked"
+            "startDate": "1999-03-09",
+            "onboardingState": "provisioned"
           }
       headers:
         - key: Content-Type

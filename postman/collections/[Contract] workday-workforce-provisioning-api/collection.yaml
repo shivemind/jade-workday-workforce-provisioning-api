@@ -3,7 +3,7 @@ type: collection
 name: '[Contract] workday-workforce-provisioning-api'
 description: |
   Sample API for worker onboarding and downstream provisioning across HR, identity, and application access workflows.
-id: 72222ddf-6be6-4d87-969e-48ef89bf7c50
+id: bd38ea8a-8aef-4855-b06e-6a9a4a043774
 variables:
   - key: baseUrl
     value: https://stage-api.example.com/workforce
