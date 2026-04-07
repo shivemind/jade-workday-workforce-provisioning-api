@@ -13,9 +13,9 @@ body:
     {
       "firstName": "string",
       "lastName": "string",
-      "workEmail": "GVDEBfIMJRgqxTr@JVmdOQZqwbQiMtxAP.qxvq",
+      "workEmail": "tR5FmCmA6zrgiiA@xPlFJWwmAxVsSsQBeoh.mid",
       "department": "string",
-      "startDate": "1999-11-19",
+      "startDate": "1989-09-25",
       "managerId": "string",
       "location": "string",
       "employmentType": "intern"
@@ -46,13 +46,13 @@ examples:
         type: json
         content: |-
           {
-            "workerId": "7bdfaa03-a57d-6f40-ae02-320f529eb8aa",
+            "workerId": "5737cbe9-1edb-9a4f-06e5-f6a958199933",
             "employeeNumber": "string",
             "status": "terminated",
             "department": "string",
             "location": "string",
-            "startDate": "2022-08-10",
-            "onboardingState": "pending_access"
+            "startDate": "1958-10-23",
+            "onboardingState": "blocked"
           }
       headers:
         - key: Content-Type
